@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalcController">
+   <bottom>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="key_1" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="1">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_2" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="2">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_3" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="3">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_pn" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="±">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_plus" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="+">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_minus" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="-">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_mul" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="*">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_div" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="/">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="key_4" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="4">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_5" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="5">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_6" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="6">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_0" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="0">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_den" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="1/x">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_pow" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="^2">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_per" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="\%">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_root" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="√">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="key_7" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="7">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_8" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="8">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_9" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text="9">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_dot" minHeight="45.0" minWidth="52.0" mnemonicParsing="false" text=".">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_c" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="C">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_ce" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="CE">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_backspace" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="&lt;">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="key_equal" minHeight="45.0" minWidth="80.0" mnemonicParsing="false" text="=">
+                     <HBox.margin>
+                        <Insets bottom="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="mode">
+            <items>
+              <MenuItem mnemonicParsing="false" text="normal" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="lingest">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="display_sub" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="2.0" prefWidth="685.0" textAlignment="RIGHT" />
+            <Label fx:id="display_main" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="174.0" prefWidth="685.0" text="0" textAlignment="RIGHT" wrapText="true">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
